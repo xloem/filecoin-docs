@@ -33,7 +33,7 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install mesa-opencl-icd ocl-icd-opencl-dev gcc git bzr jq pkg-config curl clang build-essential hwloc libhwloc-dev wget -y && sudo apt upgrade -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wget -c https://golang.org/dl/go1.16.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
-echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc && ~/.bashrc
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc && source ~/.bashrc
 git clone https://github.com/filecoin-project/lotus.git
 cd lotus/
 make clean all
